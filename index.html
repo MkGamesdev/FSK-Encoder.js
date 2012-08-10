@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>FSK Serial Generator in JavaScript for SoftModem board</title>
+<script type="text/javascript" src="./fsk.js"></script>
+</head>
+
+<body>
+
+<h1>FSK Serial Generator in JavaScript for SoftModem board</h1>
+
+<p>You can send data to the SoftModem breakout board for Arduino using JavaScript in this page.<br>
+This works in data-uri audio and HTML5 ready browsers (Firefox, Safari, Opera).</p>
+
+<p><b>About SoftModem: </b>
+<a href="http://code.google.com/p/arms22/wiki/SoftModemBreakoutBoard">http://code.google.com/p/arms22/wiki/SoftModemBreakoutBoard</a></p>
+
+
+<form onsubmit="generate($('data').value); return false;">
+Text: <input type="text" id="data" size="40" value="Hello!">
+<input type="submit" value="Generate and Send">
+<input type="button" value="Jump to Audio data" id="jmp" disabled="true" onclick="location.href=dataURI">
+</form>
+</body>
+
+</html>
