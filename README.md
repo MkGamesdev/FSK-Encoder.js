@@ -27,4 +27,4 @@ For mobile browsers (on iOS or Android Devices), you can use the Download Audio 
 
 ###Version
 
-0.51
+0.52

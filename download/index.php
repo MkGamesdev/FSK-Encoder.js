@@ -14,15 +14,9 @@ if(!$data = file_get_contents($data))
     exit;
   }
 
-//$data = str_replace(' ', '+', $_POST['data']);
-//$data = base64_decode($data);
-
-//header("Content-Type: audio/x-wav");
-//header("Content-Disposition: attachment; filename=".$dateiname);
-
 $filename = './files/'.hash("SHA256", $data).'.fsk.wav';
 
-if(!$handle = fopen($filename, "w"))
+if(!$handle = fopen('./../'.$filename, "w"))
   {
     print "Error 3";
     exit;

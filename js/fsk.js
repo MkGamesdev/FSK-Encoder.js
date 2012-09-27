@@ -81,6 +81,7 @@ function generate(str) {
   audio = new Audio(dataURI);
   audio.play();
 
-  $('jmp').disabled = false;
-  $('dl').disabled = false;
+  $('jmp').removeAttribute('disabled');
+  $('dl').removeAttribute('disabled');
+  var loadandplay = window.setTimeout("changeloadingmode($('send'));", 800);
 }

@@ -2,10 +2,10 @@ function dlaudio()
   {
     reqwest(
       {
-          url: 'download.php'
+          url: './download/'
         , type: 'html'
         , method: 'post'
-        , data: { data: $('audiodata').innerHTML, time: new Date() }
+        , data: { data: $('audiodata').innerHTML, time: new Date(milliseconds) }
         , success: function (resp)
             {
               if(resp.substr(0, 5) != 'Error')
