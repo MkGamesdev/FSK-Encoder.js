@@ -34,6 +34,24 @@
       -moz-border-radius: 4px;
       border-radius: 4px;
     }
+    #data {
+      display: block;
+      width: 93%;
+      height: 160px;
+      margin: auto;
+      font-size: 15pt;
+      font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;
+    }
+    input[type="submit"], input[type="button"]{
+      margin: auto;
+      width: 270px;
+      font-size: 30pt;
+      display: block;
+    }
+    label {
+      margin: 20px;
+      font-weight: lighter;
+    }
   </style>
 </head>
 
@@ -41,17 +59,19 @@
 <div id="content">
   <h1>FSK Serial Generator</h1><h2>in JavaScript for SoftModem board</h2><hr>
   <h3>Info</h3>
-  <p>You can send data to the SoftModem breakout board for Arduino using JavaScript in this page.<br>
-  This works in data-uri audio and HTML5 ready browsers (Firefox, Safari, Opera).</p>
-  <p>For mobile browsers (on iOS or Android Devices), you can use the Download Audio file button (because mobile browsers do not support dataURIs).</p><hr>
+  <p>The Code of this Page is located at the <a href="https://github.com/SimonWaldherr/FSK-Encoder.js">GitHub.com/SimonWaldherr/FSK-Encoder.js</a> Repo.</p>
+  <p>You can send data to the <b>SoftModem breakout board for Arduino</b> using the JavaScript on this page.<br>
+  This works via <b>data-uri</b> audio on <b>HTML5</b> ready browsers (Firefox, Safari, Opera).</p>
+  <p>For mobile browsers (on <b>iOS</b> or <b>Android</b> Devices), there is a <b>Download Audio file</b> button (because mobile browsers do not support dataURIs).</p><hr>
   <h3>Hardware (SoftModem)</h3> 
   <p><a href="http://code.google.com/p/arms22/wiki/SoftModemBreakoutBoard">Project at <b>GoogleCode</b></a><br>
      <a href="https://www.sparkfun.com/products/10331">Buy it from <b>Sparkfun</b> Electronics</a>
   </p><hr>
   <h3>Generator</h3>
   <form onsubmit="generate($('data').value); return false;">
-  Text: <input type="text" id="data" size="40" value="Hello!"><br>
-  <input type="submit" value="Generate and Play"><br>
+  <label for="data"><i>PLEASE ENTER YOUR TEXT STRING</i></label><br>
+  <textarea type="text" id="data" size="40" placeholder="Please enter your text here" onkeyup="$('send').disabled = false;"></textarea><br>
+  <input type="submit" value="Generate and Play" id="send" disabled="true"><br>
   <input type="button" value="Jump to Audio data" id="jmp" disabled="true" onclick="location.href=dataURI"><br>
   <input type="button" value="Download Audio file" id="dl" disabled="true" onclick="javascript:dlaudio();">
   </form>

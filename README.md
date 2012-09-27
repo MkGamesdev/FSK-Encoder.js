@@ -1,7 +1,6 @@
 #FSK Serial Generator
 ##in JavaScript for SoftModem breakout board
 
----
 
 ###Info
 
@@ -16,3 +15,16 @@ For mobile browsers (on iOS or Android Devices), you can use the Download Audio 
 
 [Project at GoogleCode](http://code.google.com/p/arms22/wiki/SoftModemBreakoutBoard)  
 [Buy it from Sparkfun Electronics](https://www.sparkfun.com/products/10331)
+
+---
+
+###Demo
+
+[cdn.simon.waldherr.eu/projects/fsk/](http://cdn.simon.waldherr.eu/projects/fsk/)
+[list of generated files](http://cdn.simon.waldherr.eu/projects/fsk/files/)
+
+---
+
+###Version
+
+0.51
