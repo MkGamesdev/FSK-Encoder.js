@@ -14,17 +14,17 @@ For mobile browsers (on iOS or Android Devices), you can use the Download Audio 
 ###Hardware (SoftModem)
 
 [Project at GoogleCode](http://code.google.com/p/arms22/wiki/SoftModemBreakoutBoard)  
-[Buy it from Sparkfun Electronics](https://www.sparkfun.com/products/10331)
+[Buy it from Sparkfun Electronics](https://www.sparkfun.com/products/10331)  
 
 ---
 
 ###Demo
 
-[cdn.simon.waldherr.eu/projects/fsk/](http://cdn.simon.waldherr.eu/projects/fsk/)
-[list of generated files](http://cdn.simon.waldherr.eu/projects/fsk/files/)
+[cdn.simon.waldherr.eu/projects/fsk/](http://cdn.simon.waldherr.eu/projects/fsk/)  
+[list of generated files](http://cdn.simon.waldherr.eu/projects/fsk/files/)  
 
 ---
 
 ###Version
 
-0.52b
+0.6

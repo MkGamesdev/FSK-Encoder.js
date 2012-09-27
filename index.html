@@ -20,7 +20,7 @@
   <p>You can send data to the <b>SoftModem breakout board for Arduino</b> using the JavaScript on this page.<br>
   This works via <b>data-uri</b> audio on <b>HTML5</b> ready browsers (Firefox, Safari, Opera).</p>
   <p>For mobile browsers (on <b>iOS</b> or <b>Android</b> Devices), there is a <b>Download Audio file</b> button (because mobile browsers do not support dataURIs).</p>
-  <p>This is Version 0.52b of the FSK-Encoder.js</p><hr>
+  <p>This is Version 0.6 of the FSK-Encoder.js</p><hr>
   <h3>Hardware (SoftModem)</h3> 
   <p><a href="http://code.google.com/p/arms22/wiki/SoftModemBreakoutBoard">Project at <b>GoogleCode</b></a><br>
      <a href="https://www.sparkfun.com/products/10331">Buy it from <b>Sparkfun</b> Electronics</a>
@@ -29,9 +29,9 @@
   <form onsubmit="generate($('data').value); return false;">
   <label for="data"><i>PLEASE ENTER YOUR TEXT STRING</i></label><br>
   <textarea type="text" id="data" size="40" placeholder="" onkeyup="document.getElementById('send').removeAttribute('disabled');"></textarea><br>
-  <a class="baf green" type="submit" value="Generate and Play" id="send" disabled="true" onclick="if(changeloadingmode(this)){generate($('data').value);};">send</a><br>
-  <a class="baf blue" type="button" value="Jump to Audio data" id="jmp" disabled="true" onclick="if(changeloadingmode(this)){if(window.confirm('open audio as dataURI')){location.href=dataURI;}else{changeloadingmode(this);}};">Jump to Audio data</a><br>
-  <a class="baf blue" type="button" value="Download Audio file" id="dl" disabled="true" onclick="if(changeloadingmode(this)){if(window.confirm('open .wav audio file')){dlaudio();}else{changeloadingmode(this);}};">Download Audio file</a>
+  <a class="baf green" type="submit" value="Generate and Play" id="send" disabled="true" onclick="if((changeloadingmode(this))&&($('data').value!='')){generate($('data').value);};">send</a><br>
+  <a class="baf blue" type="button" value="Jump to Audio data" id="jmp" disabled="true" onclick="if((changeloadingmode(this))&&(dataURI!='')){if(window.confirm('open audio as dataURI')){location.href=dataURI;}else{changeloadingmode(this);}};">Jump to Audio data</a><br>
+  <a class="baf blue" type="button" value="Download Audio file" id="dl" disabled="true" onclick="if((changeloadingmode(this))&&(dataURI!='')){if(window.confirm('open .wav audio file')){dlaudio();}else{changeloadingmode(this);}};">Download Audio file</a>
   </form>
 </div>
 <br>
