@@ -1,0 +1,3 @@
+[submodule "ajax"]
+	path = ajax
+	url = https://SimonWaldherr@github.com/SimonWaldherr/reqwest.git

@@ -77,8 +77,10 @@ function generate(str) {
   if (size+44 != data.length) alert("wrong size: " + size+44 + " != " + data.length);
 
   dataURI = "data:audio/wav;base64," + escape(btoa(data));
+  $('audiodata').innerHTML = dataURI;
   audio = new Audio(dataURI);
   audio.play();
 
   $('jmp').disabled = false;
+  $('dl').disabled = false;
 }
