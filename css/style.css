@@ -11,6 +11,29 @@ body{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',endColorstr='#ffffff',GradientType=0 );
 }
 
+h1, h2{
+  margin-top: 0px;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+input[type="submit"], input[type="button"]{
+  margin: auto;
+  width: 270px;
+  font-size: 30pt;
+  display: block;
+}
+
+label {
+  margin: 20px;
+  font-weight: lighter;
+}
+
+.baf, .baf[disabled]{
+  display: block;
+  margin: auto;
+}
+
 #content{
   position: relative;
   top: 3em;
@@ -33,21 +56,4 @@ body{
   margin: auto;
   font-size: 15pt;
   font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;
-}
-
-input[type="submit"], input[type="button"]{
-  margin: auto;
-  width: 270px;
-  font-size: 30pt;
-  display: block;
-}
-
-label {
-  margin: 20px;
-  font-weight: lighter;
-}
-
-.baf, .baf[disabled]{
-  display: block;
-  margin: auto;
 }
