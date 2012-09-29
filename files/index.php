@@ -1,5 +1,18 @@
 <?php
 
+/* ##############################
+
+FSK  Serial  Generator
+    in  JavaScript    
+ for SoftModem board! 
+
+Demo: http://cdn.simon.waldherr.eu/projects/fsk/
+Repo: https://github.com/SimonWaldherr/FSK-Encoder.js
+Version: 0.6
+License: MIT https://github.com/SimonWaldherr/FSK-Encoder.js/blob/master/LICENSE.md
+
+############################## */
+
 Header('X-Powered-By:0xBADCAB1E');
 
 ?><!DOCTYPE html>

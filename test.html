@@ -1,4 +1,15 @@
-<!DOCTYPE html>
+<!--
+  
+FSK  Serial  Generator
+    in  JavaScript    
+ for SoftModem board! 
+
+Demo: http://cdn.simon.waldherr.eu/projects/fsk/
+Repo: https://github.com/SimonWaldherr/FSK-Encoder.js
+Version: 0.6
+License: MIT https://github.com/SimonWaldherr/FSK-Encoder.js/blob/master/LICENSE.md
+
+--><!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -68,6 +79,14 @@
   
   <body onload="load();">
   <div id="content">
+    <h1>FSK Serial Generator</h1><h2>in JavaScript for SoftModem board</h2><hr>
+    <h3>Info</h3>
+    <p>The Code of this Page is located at the <a href="https://github.com/SimonWaldherr/FSK-Encoder.js">GitHub.com/SimonWaldherr/FSK-Encoder.js</a> Repo.</p>
+    <p>You can send data to the <b>SoftModem breakout board for Arduino</b> using the JavaScript on <a href="http://cdn.simon.waldherr.eu/projects/fsk/">cdn.simon.waldherr.eu/projects/fsk/</a>.<br>
+    This works via <b>data-uri</b> audio on <b>HTML5</b> ready browsers (Firefox, Safari, Chrome, Opera).</p>
+    <p>For mobile browsers (on <b>iOS</b> or <b>Android</b> Devices), there is a <b>Download Audio file</b> button (because mobile browsers do not support dataURIs).</p>
+    <p>This is Version 0.6 of the FSK-Encoder.js</p>
+    <p>The complete code is licensed under the terms of MIT-License.</p><hr>
     <h1>FSK Functions Testpage</h1>
     <br><span>chr8</span>
     <input name="" type="text" id="a1" onkeydown="changeValues(this);" onkeyup="$('chr8').value = chr8(this.value)">
