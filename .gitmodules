@@ -1,6 +1,6 @@
-[submodule "ajax"]
-	path = ajax
-	url = https://SimonWaldherr@github.com/SimonWaldherr/reqwest.git
 [submodule "baf"]
 	path = baf
 	url = https://SimonWaldherr@github.com/SimonWaldherr/buttons-and-forms.git
+[submodule "majax"]
+	path = majax
+	url = https://github.com/SimonWaldherr/majaX.js.git
