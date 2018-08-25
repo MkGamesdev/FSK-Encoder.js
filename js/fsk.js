@@ -85,9 +85,9 @@ function encodeFSK(str) {
   }
   var utf8 = toUTF8(str),
     sampleRate = 29400,
-    baud = 1225,
-    freqHigh = 7350,
-    freqLow = 4900,
+    baud = 500,
+    freqHigh = 19000,
+    freqLow = 20000,
     spb = sampleRate / baud,
     preCarrierBits = Math.ceil(sampleRate * 40 / 1000 / spb),
     postCarrierBits = Math.ceil(sampleRate * 5 / 1000 / spb),
